@@ -40,7 +40,7 @@ function Circle() {
 	var speedX;
 	var speedY;
 
-	var PApplet canvas;
+	PApplet canvas;
 
 	Circle(PApplet canvas, var x, var y){
 		this.canvas = canvas;
