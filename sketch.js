@@ -40,8 +40,6 @@ function Circle() {
 	var speedX;
 	var speedY;
 
-	var canvas;
-
 	Circle(canvas, var x, var y){
 		this.canvas = canvas;
 
