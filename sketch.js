@@ -1,13 +1,13 @@
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
 	smooth();
+
+	Circle [] theCircles = new Circle[100];
+
+	var maxCircles = 1000;
+	var numCircles = 0;
+	var currentCircles = 0; 
 }
-
-Circle [] theCircles = new Circle[100];
-
-var maxCircles = 1000;
-var numCircles = 0;
-var currentCircles = 0; 
 
 function draw() {
 	background(255);
