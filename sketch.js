@@ -40,9 +40,9 @@ function Circle() {
 	var speedX;
 	var speedY;
 
-	PApplet canvas;
+	var canvas;
 
-	Circle(PApplet canvas, var x, var y){
+	Circle(canvas, var x, var y){
 		this.canvas = canvas;
 
 		this.x = x;
