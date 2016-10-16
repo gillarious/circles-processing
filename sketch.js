@@ -30,17 +30,17 @@ function draw() {
 }
 
 function Circle() {
-	private var x;
-	private var y;
-	private var size;
-	private var myRed;
-	private var myGreen;
-	private var myBlue;
-	private var myAlpha;
-	private var speedX;
-	private var speedY;
+	var x;
+	var y;
+	var size;
+	var myRed;
+	var myGreen;
+	var myBlue;
+	var myAlpha;
+	var speedX;
+	var speedY;
 
-	private PApplet canvas;
+	var PApplet canvas;
 
 	Circle(PApplet canvas, var x, var y){
 		this.canvas = canvas;
