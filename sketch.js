@@ -1,5 +1,5 @@
 function setup() {
-	createCanvas(100%, 100%);
+	createCanvas(window.innerWidth, window.innerHeight);
 	smooth();
 }
 
