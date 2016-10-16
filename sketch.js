@@ -2,7 +2,7 @@ function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
 	smooth();
 
-	Circle = [] 
+	var Circle = []; 
 	theCircles = new Circle[100];
 
 	var maxCircles = 1000;
