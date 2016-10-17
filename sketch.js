@@ -28,16 +28,18 @@ function draw() {
 	}
 }
 
+var x;
+var y;
+var size;
+var myRed;
+var myGreen;
+var myBlue;
+var myAlpha;
+var speedX;
+var speedY;
+
 function Circle(canvas, x, y){
-	var x;
-	var y;
-	var size;
-	var myRed;
-	var myGreen;
-	var myBlue;
-	var myAlpha;
-	var speedX;
-	var speedY;
+	
 
 	this.canvas = canvas;
 	this.x = x;
