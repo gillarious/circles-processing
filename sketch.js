@@ -1,4 +1,4 @@
-var theCircles = [];
+var theCircles = [100];
 
 var maxCircles = 1000;
 var numCircles = 0;
