@@ -1,4 +1,4 @@
-var theCircles = [100];
+var theCircles = [];
 
 var maxCircles = 1000;
 var numCircles = 0;
@@ -37,7 +37,7 @@ window.onresize = function() {
 	height = h;
 };
 
-function Circle(canvas, x, y){
+function Circle(){
 	var x;
 	var y;
 	var size;
@@ -48,16 +48,18 @@ function Circle(canvas, x, y){
 	var speedX;
 	var speedY;
 
-	this.canvas = canvas;
-	this.x = x;
-	this.y = y;
-	size = this.canvas.random(15, 35);
-	myRed = 255;
-	myGreen = this.canvas.random(154, 229);
-	myBlue = 235;
-	myAlpha = this.canvas.random(0, 255);
-	speedX = this.canvas.random(-5, 5);
-	speedY = this.canvas.random(-5, 5);
+	Circle(canvas, x, y){
+		this.canvas = canvas;
+		this.x = x;
+		this.y = y;
+		size = this.canvas.random(15, 35);
+		myRed = 255;
+		myGreen = this.canvas.random(154, 229);
+		myBlue = 235;
+		myAlpha = this.canvas.random(0, 255);
+		speedX = this.canvas.random(-5, 5);
+		speedY = this.canvas.random(-5, 5);
+	}
 
 	Circle.prototype.move = function() {
 		x += speedX;
