@@ -22,9 +22,9 @@ function draw() {
 		}
 	}
 	for (var i = 0; i < numCircles; i++) {
-			theCircles[i].display();
-      		theCircles[i].fade();
+			theCircles[i].fade();
 			theCircles[i].move();
+			theCircles[i].display();
 	}
 }
 
