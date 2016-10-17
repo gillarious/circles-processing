@@ -20,11 +20,11 @@ function draw() {
 		if (currentCircles >= theCircles.length){
 			currentCircles = 0;
 		}
-	}
-	for (var i = 0; i < numCircles; i++) {
-		theCircles[i].display();
-      	theCircles[i].fade();
-		theCircles[i].move();
+		for (var i = 0; i < numCircles; i++) {
+			theCircles[i].display();
+      		theCircles[i].fade();
+			theCircles[i].move();
+		}
 	}
 }
 
