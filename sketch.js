@@ -5,7 +5,7 @@ var numCircles = 0;
 var currentCircles = 0;
 
 function setup() {
-	createCanvas(100%, 100%);
+	createCanvas(window.innerWidth, window.innerHeight);
 	smooth();
 }
 
@@ -28,7 +28,13 @@ function draw() {
 	}
 }
 
-
+window.onresize = function() {
+	var w = window.innerWidth;
+	var h = window.innerHeight;  
+	canvas.size(w,h);
+	width = w;
+	height = h;
+};
 
 function Circle(canvas, x, y){
 	var x;
