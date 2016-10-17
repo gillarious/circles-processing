@@ -1,12 +1,12 @@
 var theCircles = [];
 
-var maxCircles = 1000;
-var numCircles = 0;
-var currentCircles = 0;
-
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
 	smooth();
+
+	var maxCircles = 1000;
+	var numCircles = 0;
+	var currentCircles = 0;
 }
 
 function draw() {
