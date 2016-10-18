@@ -37,7 +37,7 @@ window.onresize = function() {
 	height = h;
 };
 
-function Circle(){
+Circle = function(canvas, x, y){
 	var x;
 	var y;
 	var size;
@@ -48,20 +48,18 @@ function Circle(){
 	var speedX;
 	var speedY;
 
-	this.Circle = function(canvas, x, y){
-		this.canvas = canvas;
-		this.x = x;
-		this.y = y;
-		size = this.canvas.random(15, 35);
-		myRed = 255;
-		myGreen = this.canvas.random(154, 229);
-		myBlue = 235;
-		myAlpha = this.canvas.random(0, 255);
-		speedX = this.canvas.random(-5, 5);
-		speedY = this.canvas.random(-5, 5);
-	}
+	this.canvas = canvas;
+	this.x = x;
+	this.y = y;
+	size = this.canvas.random(15, 35);
+	myRed = 255;
+	myGreen = this.canvas.random(154, 229);
+	myBlue = 235;
+	myAlpha = this.canvas.random(0, 255);
+	speedX = this.canvas.random(-5, 5);
+	speedY = this.canvas.random(-5, 5);
 
-	Circle.prototype.move = function() {
+	Circle.prototype.move = function(){
 		x += speedX;
 		y += speedY;
 
@@ -83,13 +81,13 @@ function Circle(){
 		}
 	}
 
-	Circle.prototype.display = function() {
+	Circle.prototype.display = function(){
 		this.canvas.noStroke();
 		this.canvas.fill(myRed, myGreen, myBlue, myAlpha);
 		this.canvas.ellipse(x, y, size, size);
 	}
 
-	Circle.prototype.fade = function() {
+	Circle.prototype.fade = function(){
 		if (myAlpha > 0) {
 			myAlpha -= 3;
 		}
@@ -97,6 +95,4 @@ function Circle(){
 			myAlpha = 0;
 		}
 	}
-}
-
-	
+}	
