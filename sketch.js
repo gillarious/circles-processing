@@ -1,6 +1,5 @@
 var theCircles = [];
 
-var maxCircles = 1000;
 var numCircles = 0;
 var currentCircles = 0;
 
@@ -13,8 +12,9 @@ function setup() {
 function draw() {
 	background(255,255,255);
 	if (mouseIsPressed) {
-		currentCircles = new Circle(this, mouseX, mouseY);
+		
 		theCircles.push(currentCircles);
+		currentCircles = new Circle(this, mouseX, mouseY);
 		currentCircles++;
 		if (numCircles < theCircles.length){
 			numCircles++;
