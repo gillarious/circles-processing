@@ -17,7 +17,7 @@ function draw() {
 			currentCircles = 0;
 		}
 	}
-	for (var i = 0; i < numCircles; i++) {
+	for (var i = 0; i < currentCircles; i++) {
 			theCircles[i].fade();
 			theCircles[i].move();
 			theCircles[i].display();
