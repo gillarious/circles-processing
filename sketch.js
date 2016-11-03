@@ -1,5 +1,6 @@
 var theCircles = [];
 
+var numCircles = 0;
 var currentCircles = 0;
 
 function setup() {
@@ -13,11 +14,14 @@ function draw() {
 	if (mouseIsPressed) {
 		theCircles[currentCircles] = new Circle(this, mouseX, mouseY);
 		currentCircles++;
+		if (numCircles < theCircles.length){
+			numCircles++;
+		}
 		if (currentCircles >= theCircles.length){
 			currentCircles = 0;
 		}
 	}
-	for (var i = 0; i < currentCircles; i++) {
+	for (var i = 0; i < numCircles; i++) {
 			theCircles[i].fade();
 			theCircles[i].move();
 			theCircles[i].display();
