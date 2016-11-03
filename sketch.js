@@ -7,7 +7,7 @@ function setup() {
 	smooth();
 }
 
-function mousePressed() {
+function mouseDragged() {
 	for (var i = 0; i < 200; i++) {
 		theCircles[i] = new Circle(this, mouseX, mouseY);
 	}
