@@ -9,7 +9,7 @@ function setup() {
 
 function mouseDragged() {
 	for (var i = 0; i < 200; i++) {
-		theCircles[i = new Circle(this, mouseX, mouseY)];
+		theCircles[i] = new Circle(this, mouseX, mouseY);
 	}
 }
 
