@@ -13,7 +13,8 @@ function draw() {
 	background(255,255,255);
 	if (mouseIsPressed) {
 		//theCircles[currentCircles] = new Circle(this, mouseX, mouseY);
-		theCircles.add(currentCircles = new Circle(this, mouseX, mouseY));
+		currentCircles = new Circle(this, mouseX, mouseY);
+		theCircles[currentCircles];
 		currentCircles++;
 		if (numCircles < theCircles.length){
 			numCircles++;
