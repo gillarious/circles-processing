@@ -4,7 +4,7 @@ var theCircles = [];
 function setup() {
 	var canvas = createCanvas(window.innerWidth, window.innerHeight);
 	canvas.parent('canvas-wrap');
-	for (var i = 0; i < 100; i++) {
+	for (var i = 0; i < 200; i++) {
 		theCircles[i] = new Circle(this, mouseX, mouseY);
 	}
 	smooth();
