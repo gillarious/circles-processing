@@ -1,27 +1,22 @@
 var theCircles = [];
 
-var numCircles = 0;
-var currentCircles = 0;
 
 function setup() {
 	var canvas = createCanvas(window.innerWidth, window.innerHeight);
 	canvas.parent('canvas-wrap');
+	for (var i = 0; i < 100; i++) {
+		theCircles[i] = new Circle(this, mouseX, mouseY);
+	}
 	smooth();
+}
+
+function mousePressed() {
+	theCircles.push(new Circle(this, mouseX, mouseY));
 }
 
 function draw() {
 	background(255,255,255);
-	if (mouseIsPressed) {
-		theCircles[currentCircles] = new Circle(this, mouseX, mouseY);
-		currentCircles++;
-		if (numCircles < theCircles.length){
-			numCircles++;
-		}
-		if (currentCircles >= theCircles.length){
-			currentCircles = 0;
-		}
-	}
-	for (var i = 0; i < numCircles; i++) {
+	for (var i = 0; i < theCircles.length; i++) {
 		theCircles[i].fade();
 		theCircles[i].move();
 		theCircles[i].display();
