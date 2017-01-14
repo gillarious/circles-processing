@@ -14,8 +14,8 @@ function draw() {
 	if (mouseIsPressed) {
 		//theCircles[new Circle(this, mouseX, mouseY)];
 		circle1 = new Circle(this, mouseX, mouseY);
-		/*circle1.display();
-		circle1.move();
+		circle1.display();
+		/*circle1.move();
 		circle1.fade();*/
 	}
 	/*for (var i = 0; i < theCircles.length; i++) {
