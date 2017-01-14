@@ -1,5 +1,5 @@
 //var theCircles = [];
-
+var circle1;
 
 function setup() {
 	var canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -9,10 +9,9 @@ function setup() {
 
 function draw() {
 	background(255,255,255);
-	circle1 = new Circle(this, mouseX, mouseY);
 	if (mouseIsPressed) {
 		//theCircles[new Circle(this, mouseX, mouseY)];
-		
+		circle1 = new Circle(this, mouseX, mouseY);
 		circle1.fade();
 		circle1.move();
 		circle1.display();
