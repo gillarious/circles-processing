@@ -8,7 +8,9 @@ function setup() {
 }
 
 function draw() {
-	background(255,255,255);
+	background(0,255,255);
+	
+
 	if (mouseIsPressed) {
 		//theCircles[new Circle(this, mouseX, mouseY)];
 		circle1 = new Circle(this, mouseX, mouseY);
