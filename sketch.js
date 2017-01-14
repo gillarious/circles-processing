@@ -1,4 +1,4 @@
-var theCircles = [];
+//var theCircles = [];
 
 
 function setup() {
@@ -7,19 +7,20 @@ function setup() {
 	smooth();
 }
 
-function mouseDragged() {
-	for (var i = 0; i < 200; i++) {
-		theCircles[i] = new Circle(this, mouseX, mouseY);
-	}
-}
-
 function draw() {
 	background(255,255,255);
-	for (var i = 0; i < theCircles.length; i++) {
+	if (mouseIsPressed) {
+		//theCircles[new Circle(this, mouseX, mouseY)];
+		circle1 = new Circle(this, mouseX, mouseY;
+	}
+	/*for (var i = 0; i < theCircles.length; i++) {
 		theCircles[i].fade();
 		theCircles[i].move();
 		theCircles[i].display();
-	}
+	}*/
+	circle1.fade();
+	circle1.move();
+	circle1.display();
 }
 
 window.onresize = function() {
