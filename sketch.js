@@ -8,15 +8,15 @@ function setup() {
 }
 
 function draw() {
-	background(0,255,255);
+	background(255,255,255);
 	
 
 	if (mouseIsPressed) {
 		//theCircles[new Circle(this, mouseX, mouseY)];
 		circle1 = new Circle(this, mouseX, mouseY);
-		circle1.display();
+		/*circle1.display();
 		circle1.move();
-		circle1.fade();
+		circle1.fade();*/
 	}
 	/*for (var i = 0; i < theCircles.length; i++) {
 		theCircles[i].fade();
